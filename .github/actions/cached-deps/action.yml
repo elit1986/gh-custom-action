@@ -1,10 +1,8 @@
 name: "Get & Cache Dependencies"
-description: "Get dependencies and cache them for future runs"
+description: "Get dependencies (via npm) and cache them for future runs"
 runs:
   using: "composite"
   steps:
-    - - name: Get code
-        uses: actions/checkout@v3
       - name: Cache dependencies
         id: cache
         uses: actions/cache@v3
