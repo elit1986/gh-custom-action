@@ -21,7 +21,7 @@ jobs:
       - name: Load & cache dependencies
         uses: ./.github/actions/cached-deps
         with:
-          chaching: 'false'
+          caching: 'false'
       - name: Test code
         id: run-tests
         run: npm run test
